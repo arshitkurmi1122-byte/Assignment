@@ -1,0 +1,194 @@
+/* Basic Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3e9d8;
+  color: #493326;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+header {
+  background-color: #70452f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 12px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 12px;
+}
+
+nav a:hover {
+  color: #e8b98d;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #a66b48;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  padding: 70px 40px;
+  color: white;
+}
+
+/* Overlay */
+.overlay {
+  background-color: #493326;
+  opacity: 0.25;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h2 {
+  font-size: 40px;
+  margin: 12px 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #e8b98d;
+  color: #493326;
+  padding: 12px 22px;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+/* About */
+#about {
+  text-align: center;
+  padding: 40px;
+}
+
+#about p {
+  margin-top: 15px;
+}
+
+/* Menu */
+#services {
+  text-align: center;
+  padding: 30px;
+}
+
+.card {
+  display: inline-block;
+  width: 25%;
+  background-color: white;
+  padding: 25px;
+  margin: 15px;
+  border: 2px solid #d9b99b;
+  border-radius: 12px;
+  box-shadow: 2px 4px 10px #d8c5b2;
+}
+
+.card h3 {
+  margin-bottom: 12px;
+}
+
+.card h4 {
+  color: #c77b50;
+  margin-top: 15px;
+}
+
+.special {
+  background-color: #ead5bf;
+  border-color: #c77b50;
+}
+
+/* Gallery */
+#gallery {
+  text-align: center;
+  padding: 30px;
+}
+
+#gallery img {
+  width: 250px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 15px;
+}
+
+/* Contact */
+#contact {
+  padding: 30px;
+  text-align: center;
+}
+
+form {
+  width: 60%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #b99a7d;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #70452f;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #70452f;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card {
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+}
