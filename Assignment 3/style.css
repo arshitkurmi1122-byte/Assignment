@@ -1,0 +1,172 @@
+/* CSS Variables */
+
+:root {
+  --primary-color: #173b57;
+  --secondary-color: #087e8b;
+  --background-color: #eef4f8;
+  --white-color: #ffffff;
+  --text-color: #263746;
+  --border-color: #d5e0e8;
+  --success-color: #16834a;
+
+  --small-space: 10px;
+  --medium-space: 20px;
+  --large-space: 30px;
+
+  --font-size: 14px;
+}
+
+/* Basic Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: var(--font-size);
+}
+
+/* Header */
+
+header {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-align: center;
+  padding: var(--large-space);
+}
+
+header h1 {
+  margin-bottom: var(--small-space);
+}
+
+/* Dashboard */
+
+.dashboard {
+  background-color: var(--white-color);
+  width: 95%;
+  max-width: 1200px;
+  margin: var(--large-space) auto;
+  padding: var(--medium-space);
+  border-radius: 10px;
+}
+
+.dashboard h2 {
+  color: var(--primary-color);
+  margin-bottom: var(--small-space);
+}
+
+.description {
+  margin-bottom: var(--medium-space);
+  color: #647585;
+}
+
+/* Table Container */
+
+.table-container {
+  overflow-x: auto;
+}
+
+/* Table Styling */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--white-color);
+  text-align: center;
+}
+
+caption {
+  font-size: 18px;
+  font-weight: bold;
+  padding: var(--medium-space);
+  color: var(--primary-color);
+}
+
+th,
+td {
+  border: 1px solid var(--border-color);
+  padding: 13px 10px;
+}
+
+thead {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.main-heading {
+  background-color: var(--secondary-color);
+  padding: 16px;
+  font-size: 16px;
+}
+
+/* Striped Rows */
+
+tbody tr:nth-child(even) {
+  background-color: #eaf2f7;
+}
+
+/* Hover Effect */
+
+tbody tr:hover {
+  background-color: #cce9ec;
+  transition: 0.3s;
+}
+
+/* Department and Semester Cells */
+
+tbody td[rowspan] {
+  background-color: #ccdddd;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Result Styling */
+
+.pass {
+  color: var(--success-color);
+  font-weight: bold;
+}
+
+/* Footer */
+
+tfoot {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+tfoot td {
+  padding: 15px 10px;
+}
+
+/* Page Footer */
+
+footer {
+  text-align: center;
+  padding: var(--medium-space);
+  color: var(--text-color);
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+  .dashboard {
+    width: 98%;
+    padding: var(--small-space);
+  }
+
+  th,
+  td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+}
