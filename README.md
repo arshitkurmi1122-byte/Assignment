@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # My HTML Projects
 
 Welcome to my HTML learning repository!
@@ -22,3 +23,5 @@ A simple personal portfolio website created using HTML.
 
 ## Author
 Arshit Gangwar
+=======
+>>>>>>> 9f4798f (Stage 5: Add Screenshot)
