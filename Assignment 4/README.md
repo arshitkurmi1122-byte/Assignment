@@ -21,8 +21,8 @@ I created it using HTML and CSS.
 ## Design Choices
 
 - Navy blue is used for the header and footer.
-- White is used for hover effects.
-- is used for section backgrounds.
+- Red is used for hover effects.
+- White is used for section backgrounds.
 - Poppins is used for headings.
 - Roboto is used for normal text.
 - CSS variables are used to manage colours.
