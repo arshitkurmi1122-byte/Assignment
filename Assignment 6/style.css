@@ -1,0 +1,87 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f3e9;
+  margin: 0;
+  text-align: center;
+}
+
+/* Navbar styling */
+nav {
+  background-color: #244b43;
+  padding: 18px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Navbar heading */
+nav h2 {
+  color: white;
+}
+
+/* Navbar links */
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main heading */
+h1 {
+  color: #244b43;
+  margin-top: 35px;
+}
+
+/* Product container */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+}
+
+/* Product card */
+.card {
+  background-color: white;
+  width: 200px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Product images */
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Product names */
+.card h3 {
+  color: #244b43;
+}
+
+/* Product prices */
+.card p {
+  color: #777;
+}
+/* Product card hover effect */
+.card {
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+/* Mobile responsive design */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
