@@ -5,6 +5,7 @@ Welcome to my HTML and CSS learning journey!
 This repository contains my practice assignments and small projects created while learning web development.
 
 ## 📚 What I Learned
+<<<<<<< HEAD
 - HTML Basics
 - HTML5 Structure
 - Headings, Paragraphs & Links
@@ -18,11 +19,34 @@ This repository contains my practice assignments and small projects created whil
 To improve my web development skills through regular practice and build creative, simple, and responsive web pages.
 
 ## 🛠️ Technologies Used
+=======
+
+- HTML Basics
+- HTML5 Structure
+- Headings, Paragraphs & Links
+- Images and Lists
+- CSS Basics
+- Colors, Fonts & Backgrounds
+- Layouts and Styling
+- Basic Web Design
+
+## 🎯 Goal
+
+To improve my web development skills through regular practice and build creative, simple, and responsive web pages.
+
+## 🛠️ Technologies Used
+
+>>>>>>> d37f7fb (Update main README)
 - HTML5
 - CSS3
 - VS Code
 - Git & GitHub
 
 ## 👨‍💻 Author
+<<<<<<< HEAD
 Created by **Arshit Gangwar** as part of my web development learning journey.
 
+=======
+
+Created by **Arshit Gangwar** as part of my web development learning journey.
+>>>>>>> d37f7fb (Update main README)
