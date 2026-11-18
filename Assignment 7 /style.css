@@ -1,0 +1,133 @@
+/* Common styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 25px;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f3;
+  color: #23413f;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+/* PAGE 1: Photo Gallery */
+
+.gallery {
+  display: grid;
+
+  /* Three equal columns */
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* PAGE 2: Product Grid */
+
+.products {
+  display: grid;
+
+  /* Automatically adjusts columns */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  gap: 20px;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+.product {
+  background-color: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 10px #00000015;
+}
+
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* PAGE 3: Dashboard */
+
+.dashboard {
+  display: grid;
+
+  /* Named grid areas */
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+
+  grid-template-columns: 200px 1fr;
+
+  gap: 15px;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+.dashboard header {
+  grid-area: header;
+  background-color: #174f4c;
+  color: white;
+  padding: 20px;
+}
+
+.dashboard aside {
+  grid-area: sidebar;
+  background-color: #d5e9e2;
+  padding: 20px;
+}
+
+.dashboard main {
+  grid-area: main;
+  background-color: white;
+  padding: 20px;
+}
+
+.dashboard footer {
+  grid-area: footer;
+  background-color: #174f4c;
+  color: white;
+  padding: 15px;
+}
+
+.dashboard-card {
+  background-color: #e0efea;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard {
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "footer";
+
+    grid-template-columns: 1fr;
+  }
+}
