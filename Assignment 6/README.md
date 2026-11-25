@@ -1,22 +1,33 @@
-# Assignment 6 - My Mini Store
+# Assignment 6 – Flexbox Practice Pack
 
-## About Project
+## About
 
-A simple shopping webpage made using HTML and CSS.
+This assignment is based on CSS Flexbox. It contains four different web pages to practice one-dimensional layouts.
 
-## Features
+## Pages Included
 
-- Navigation bar
-- Four product cards
-- Flexbox layout
-- Hover effects
-- Responsive design
+1. **menu.html** – Horizontal navigation menu using Flexbox.
+2. **login.html** – Login form centered horizontally and vertically.
+3. **products.html** – Product listing with 8 items using flex-wrap.
+4. **navbar-hero.html** – Navbar and centered hero section.
+
+## Concepts Used
+
+- Display Flex
+- Justify Content
+- Align Items
+- Flex Direction
+- Flex Wrap
+- Gap
+- Flex Grow
+- HTML Forms
+- CSS Box Model
 
 ## Technologies Used
 
-- HTML
-- CSS
+- HTML5
+- CSS3
 
-## Learning
+## Learning Outcome
 
-Learned Flexbox, alignment, gap and responsive design.
+Learned how to create different layouts using CSS Flexbox and how to align and arrange elements on a webpage.
