@@ -1,87 +1,214 @@
-/* Basic styling */
+/* Basic Settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f3e9;
-  margin: 0;
-  text-align: center;
+  color: #203b50;
 }
 
-/* Navbar styling */
-nav {
-  background-color: #244b43;
-  padding: 18px;
+/* PAGE 1 - MENU */
+
+.menu-page {
+  min-height: 100vh;
+  background-color: #edf5f2;
+  padding: 40px;
+}
+
+.menu-bar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-}
-
-/* Navbar heading */
-nav h2 {
+  background-color: #17464a;
   color: white;
+  padding: 20px 30px;
+  border-radius: 8px;
 }
 
-/* Navbar links */
-nav a {
+.menu-links {
+  display: flex;
+  gap: 25px;
+}
+
+.menu-links a {
   color: white;
   text-decoration: none;
 }
 
-/* Main heading */
-h1 {
-  color: #244b43;
-  margin-top: 35px;
+.menu-links a:hover {
+  color: #e9bd75;
 }
 
-/* Product container */
-.container {
+.menu-page h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.menu-page p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* PAGE 2 - LOGIN */
+
+.login-page {
+  min-height: 100vh;
+  background-color: #dcece5;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 320px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+  margin-bottom: 10px;
+}
+
+.login-box p {
+  margin-bottom: 20px;
+  color: #777;
+}
+
+.login-box label {
+  display: block;
+  margin: 12px 0 6px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #b8c9c5;
+  border-radius: 5px;
+}
+
+.login-box button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #176b70;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background-color: #104c50;
+}
+
+/* PAGE 3 - PRODUCTS */
+
+.products-page {
+  min-height: 100vh;
+  background-color: #edf5f2;
+  padding: 40px;
+  text-align: center;
+}
+
+.products-page h1 {
+  margin-bottom: 10px;
+}
+
+.products-page > p {
+  margin-bottom: 30px;
+}
+
+.product-container {
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
+}
+
+.product {
+  width: 220px;
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #d5e0dc;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.product-image {
+  height: 110px;
+  background-color: #dcece5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+
+.product h3 {
+  margin-bottom: 8px;
+}
+
+.product p {
+  color: #176b70;
+}
+
+/* PAGE 4 - NAVBAR AND HERO */
+
+.store-page {
+  min-height: 100vh;
+  background-color: #edf5f2;
   padding: 30px;
 }
 
-/* Product card */
-.card {
-  background-color: white;
-  width: 200px;
-  padding: 15px;
-  border-radius: 10px;
+.store-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #17464a;
+  color: white;
+  padding: 20px 30px;
 }
 
-/* Product images */
-.card img {
-  width: 100%;
-  border-radius: 8px;
+.store-links {
+  display: flex;
+  gap: 22px;
 }
 
-/* Product names */
-.card h3 {
-  color: #244b43;
+.store-links a {
+  color: white;
+  text-decoration: none;
 }
 
-/* Product prices */
-.card p {
-  color: #777;
-}
-/* Product card hover effect */
-.card {
-  transition: 0.3s;
+.store-links a:hover {
+  color: #e9bd75;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+.store-hero {
+  min-height: 400px;
+  background-color: #dcece5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  gap: 18px;
 }
-/* Mobile responsive design */
-@media (max-width: 600px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  nav {
-    flex-wrap: wrap;
-    gap: 15px;
-  }
+.store-hero h1 {
+  font-size: 32px;
+}
+
+.explore-btn {
+  background-color: #176b70;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
 }
